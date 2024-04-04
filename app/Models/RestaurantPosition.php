@@ -9,5 +9,9 @@ class RestaurantPosition extends Model
 {
     use HasFactory;
 
-    protected $cast = ['restaurant_id' => 'integer'];
+    protected $casts = [
+        'restaurant_id' => 'integer',
+        'latitude' => 'float',
+        'longitude' => 'float',
+    ];
 }
