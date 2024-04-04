@@ -9,7 +9,7 @@ class Restaurant extends Model
 {
     use HasFactory;
 
-    protected $cast = ['open' => 'boolean'];
+    protected $cast = ['open' => 'integer'];
 
     public function ratings()
     {
