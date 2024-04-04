@@ -51,7 +51,7 @@ class CategorySeeder extends Seeder
                 'name' => 'Greek',
             ],
             [
-                'name' => 'Mediterranean',
+                'name' => 'Korean',
             ],
             [
                 'name' => 'American',
