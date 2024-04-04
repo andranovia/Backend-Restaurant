@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class RestaurantReview extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'restaurant_id' => 'integer',
+        'rating' => 'integer',
+        'rating_text' => 'string',
+    ];
 }

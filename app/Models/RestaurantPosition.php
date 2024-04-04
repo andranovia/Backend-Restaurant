@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class RestaurantPosition extends Model
 {
     use HasFactory;
+
+    protected $cast = ['restaurant_id' => 'integer'];
 }

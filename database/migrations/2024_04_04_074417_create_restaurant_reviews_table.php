@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('restaurant_reviews', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('restaurant_id');
-            $table->foreign('restaurant_id')->references('id')->on('restaurants'); // Corrected table name
-            $table->unsignedBigInteger('user_id'); // Assuming user_id should be an unsigned integer
+            $table->foreign('restaurant_id')->references('id')->on('restaurants');
+            $table->unsignedBigInteger('user_id');
             $table->string('user_name');
             $table->integer('rating');
             $table->string('rating_text');
